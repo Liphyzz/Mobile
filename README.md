@@ -73,3 +73,12 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
         - limpa o cache do build (apaga o apk anterior)
     - `flutter run -v`
         - build do app (apk)
+
+- gerenciamento de dependências do PubSpec()
+    - instalação
+        - `flutter pub add nome_dependencia`
+    - baixar e instalar dependências projetadas
+        - `flutter pub get`
+    - outros comandos do flutter pub(dependências)
+        - `flutter pub outdated` (verifica se as dependências estão desatualizadas)
+        - `flutter pub upgrade` (atualiza as dependências do flutter pub)
