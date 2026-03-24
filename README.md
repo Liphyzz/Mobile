@@ -86,7 +86,7 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
 ### Estrutura básica de um aplicativo em flutter
 
 #### Árvore de Widgets
-    ```mermaid
+```mermaid
 
     flowchart TD
         subgraph MaterialApp["MaterialApp"]
@@ -109,4 +109,4 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
         MaterialApp --> Janelas
         Janelas --> Scaffold
 
-    ```
+```
