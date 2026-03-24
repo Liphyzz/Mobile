@@ -82,3 +82,31 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
     - outros comandos do flutter pub(dependências)
         - `flutter pub outdated` (verifica se as dependências estão desatualizadas)
         - `flutter pub upgrade` (atualiza as dependências do flutter pub)
+
+### Estrutura básica de um aplicativo em flutter
+
+#### Árvore de Widgets
+    ```mermaid
+
+    flowchart TD
+        subgraph MaterialApp["MaterialApp"]
+        end
+
+        subgraph Janelas["Janelas"]
+            StateLess["StateLess"]
+            StateFull["StateFull"]
+        end
+
+        subgraph Scaffold["Scaffold"]
+            AppBar["Appbar"]
+            Body["Body"]
+            BNBar["BNBar"]
+            Drawer["Drawer"]
+            FAButton["FAButton"]
+            SnackBar["SnackBar"]
+        end
+
+        MaterialApp -> Janelas
+        Janelas -> Scaffold
+        
+    ```
