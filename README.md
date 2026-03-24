@@ -106,7 +106,7 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
             SnackBar["SnackBar"]
         end
 
-        MaterialApp -> Janelas
-        Janelas -> Scaffold
-        
+        MaterialApp --> Janelas
+        Janelas --> Scaffold
+
     ```
