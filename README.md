@@ -35,6 +35,7 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
     - Linguagens: Dart
     - Ambientes: Mac, Win, Linux
 
+
 ## Preparação do Ambiente de Desenvolvimento
 
 ### Instalação do FlutterSDK
@@ -110,3 +111,22 @@ Hoje criamos um novo usuário restrito com permissões de administrador chamado 
         Janelas --> Scaffold
 
 ```
+
+#### Tipo de Janelas
+
+##### StateLess
+Janelas Imutáveis - uma vez construida ela não se altera
+Obs.: pode ter movimento (GIF, Movies, Carousel, Cards), mas não consigo alterar as imagens, vídeos, GIFs e outros elementos depois de montados.
+
+##### StateFull
+Janelas que permitem mudança de estado (setState)
+Obs.: Permite Adicionar elemetos a Janela, Como novas Imagens, Novos Textos entre outros.
+
+##### Comparativo StateLess x StateFull
+
+|Caracteristica|Stateless|Stateful|
+|-|-|-|
+|Mutabilidade| Não | Sim |
+|Uso Ideal | Layouts Fixo e Exibição de dados Estáticos | Interações do Usuários, Animações e Dados Dinâmicos|
+|Armazenamento de Estado| Não | Sim |
+| Método Principal | build() | build()+setState() |
